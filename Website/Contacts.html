@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="Contacts.css" />
+</head>
+<body>
+  <nav>
+    <h1>THENORTHPOLE</h1>
+    <ul>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="Groups.html">GROUPS</a></li>
+      <li><a href="Contacts.html">CONTACT</a></li>
+    </ul>
+    <div>
+      <input type="text" placeholder="search" />
+      <button>Log in</button>
+    </div>
+  </nav>
+
+  <div class="Fourth">
+    <div class="details" style="width: 650px; height: 350px; margin-left: 15px;">
+      <label>First name*</label>
+      <label style="margin-left: 130px;">Lastname*</label><br />
+      <input type="text" id="firstName" style="border: 1px solid; color: white;" />
+      <input type="text" id="lastName" style="margin-left: 5px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Email*</label><br />
+      <input type="text" id="email" style="width: 400px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Subject</label><br />
+      <input type="text" id="subject" style="width: 400px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Message</label><br />
+      <input type="text" id="message" style="width: 400px; height: 90px; border: 1px solid; color: white;" /><br />
+      <button onclick="validateContactForm()" style="width: 180px; height: 30px; background-color: black; color: white; border: 2px solid; margin-left: 220px;">Send</button>
+    </div>
+
+    <div class="details" style="width: 680px; height: 350px;">
+      <h1>CONTACT</h1>
+      <h3>
+        <pre>
+I'm a paragraph. Click here to add your own text
+and edit me. I'm a great place for you to tell a
+story and let your users know a little more 
+about you.
+        </pre>
+      </h3>
+      <h3>info@my-domain.com<br />Tel: 1-800-000-0000</h3>
+    </div>
+  </div>
+  <script>
+    function validateContactForm() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!firstName || !lastName || !email || !message) {
+        alert("Please fill in all required fields.");
+        return false;
+      }
+
+      alert("Message sent successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>

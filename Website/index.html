@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>website</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav>
+    <h1>THENORTHPOLE</h1>
+    <ul>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="Groups.html">GROUPS</a></li>
+      <li><a href="Contacts.html">CONTACT</a></li>
+    </ul>
+    <div>
+      <input type="text" id="searchBox" placeholder="search" />
+      <button>Log in</button>
+    </div>
+  </nav>
+
+  <div class="adventure">
+    <h1>PLAN YOUR ADVENTURE</h1>
+    <button><a href="shop.html">SHOP NOW</a></button>
+  </div>
+
+  <div class="second">
+    <div class="box">
+      <h1 style="margin-top: 250px;">NEW ARRIVALS</h1>
+      <button>SHOP NOW</button>
+    </div>
+    <div class="box">
+      <img src="Images/seconds.avif" style="height: 650px; width: 770px;"/>
+    </div>
+  </div>
+
+  <div class="photos">
+    <div class="one">
+      <img src="Images/image1.jpg" style="width: 450px; height: 300px;"/>
+    </div>
+    <div class="one">
+      <img src="Images/image2.jpg" style="width: 450px; height: 300px;"/>
+    </div>
+    <div class="one">
+      <img src="Images/image3.jpg" style="width: 400px; height: 300px;"/>
+    </div>
+  </div>
+
+  <div class="sales">
+    <h2>NOW ON SALE</h2>
+    <h4>UP TO 50% OFF</h4>
+  </div>
+
+  <div class="bags">
+    <div class="two">
+      <img src="Images/bag1.jpg" />
+      <footer>
+        <h1>CANVAS BACKPACK</h1>
+        <p>---</p>
+        <h3>$67.50</h3>
+      </footer>
+    </div>
+    <div class="two">
+      <img src="Images/bag2.jpg" style="height: 230px;" />
+      <footer>
+        <h1>TECHNICAL PACK</h1>
+        <p>---</p>
+        <h3>$104.00</h3>
+      </footer>
+    </div>
+    <div class="two">
+      <img src="Images/bag3.jpg" />
+      <footer>
+        <h1>CAMO BACKPACK</h1>
+        <p>---</p>
+        <h3>$76.00</h3>
+      </footer>
+    </div>
+  </div>
+
+  <div class="third">
+    <div class="About" style="width: 750px; height: 500px; font-size: larger; margin-left: 17px;">
+      <h1 style="margin-top: 100px;">ABOUT US</h1>
+      <p>
+        "Pick your dreams in the perfect bag and let the journey begin."<br />
+        "A great bag is the first step to an unforgettable adventure."<br />
+        "The right bag makes every trip a little more special."
+      </p>
+    </div>
+    <div class="About">
+      <img src="images/about.jpg" style="height: 496px; width: 750px; margin-left: 2px;" />
+    </div>
+  </div>
+
+  <div class="Fourth">
+    <div class="details" style="width: 750px; height: 350px; margin-left: 15px;">
+      <label>First name*</label>
+      <label style="margin-left: 130px;">Lastname*</label><br />
+      <input type="text" id="firstName" style="border: 1px solid; color: white;" />
+      <input type="text" id="lastName" style="margin-left: 5px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Email*</label><br />
+      <input type="text" id="contactEmail" style="width: 400px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Subject</label><br />
+      <input type="text" style="width: 400px; border: 1px solid; color: white;" /><br />
+      <label>Enter Your Message </label><br />
+      <input type="text" id="message" style="width: 400px; height: 90px; border: 1px solid; color: white;" /><br />
+      <button onclick="return validateForm()" style="width: 180px; height: 30px; background-color: black; color: white; border: 2px solid; margin-left: 220px;">Send</button>
+    </div>
+
+    <div class="details" style="width: 680px; height: 350px;">
+      <h1>CONTACT</h1>
+      <h3>
+        I'm a paragraph. Click here to add your own text and edit me.<br />
+        I'm a great place for you to tell a story and let your users know a little more about you.
+      </h3>
+      <h3>info@my-domain.com<br />Tel: 1-800-000-0000</h3>
+    </div>
+  </div>
+
+  <div class="fifth">
+    <div class="five">
+      <h1>JOIN OUR MAILING LIST</h1>
+      <h4>AND NEVER MISS AN UPDATE</h4>
+    </div>
+    <div class="five">
+      <label>Enter your email here*</label><br />
+      <input type="email" id="subscribeEmail" placeholder="Enter your email" /><br /><br />
+      <button onclick="subscribe()">SUBSCRIBE NOW</button>
+    </div>
+  </div>
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    searchBox.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        alert('You searched for: ' + searchBox.value);
+      }
+    });
+    function subscribe() {
+      const email = document.getElementById('subscribeEmail').value;
+      if (email === "") {
+        alert("Please enter your email.");
+      } else {
+        alert("Thanks for subscribing, " + email + "!");
+      }
+    }
+    function validateForm() {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('contactEmail').value;
+      const message = document.getElementById('message').value;
+
+      if (!firstName || !lastName || !email || !message) {
+        alert("Please fill in all required fields.");
+        return false;
+      }
+
+      alert("Message sent successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>

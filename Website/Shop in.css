@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    padding: 50px;
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.head{
+        background-color: black;
+        box-sizing: border-box;
+        height: 150px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+    }
+.head h3{
+    padding-top: 100px;
+}
+.content{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    height: 500px;
+    border-bottom: 2px solid white;
+
+}
+.content img{
+    width: 500px;
+    height: 500px;
+
+}
+.content .C1{
+    height: 500px;
+    width: 500px;
+    float: left;
+}
+.content button{
+    margin-left: 30px;
+    width: 300px;
+    height: 50px;
+    color: black;
+    background-color: white;
+}
+.content button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.something{
+    background-color: black;
+    color: white;
+    float: left;
+    border-bottom: 0.5px solid white;
+}
+.something .one{
+    height: 400px;
+    width: 500px;
+    float: left;
+}
+.new{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid white;
+    
+}
+.new button{
+    background-color:  black;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+}
+.new button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid  black; 
+}
+.recommend{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}

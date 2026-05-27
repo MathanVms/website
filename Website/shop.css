@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    padding: 50px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+}
+.Browse nav{
+    background-color: black;
+    color: white;
+    justify-content:stretch;
+    align-items: center;
+    padding: 30px;
+}
+.Browse ol{
+    margin-left: 30px;
+}
+.Browse h1{
+    background-color: black;
+    color: white;
+}
+.Menu{
+    background-color: rgb(6,6,6) ;
+    color: white;
+    width: 1000px;
+    height: 200px;
+    
+    
+}
+.Menu pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 150px;
+}
+.bags{
+    height: 300px;
+    box-sizing: border-box;
+    background-color: rgb(6, 6, 6);
+
+}
+.bags .one{
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    float: left;
+    margin-left: 150px;
+    border: 0.5px solid white;
+    
+}
+.one:hover{
+    background-color: rgb(49, 44, 44);
+    color: black;
+}

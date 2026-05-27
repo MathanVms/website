@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    padding: 50px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+}
+.third{
+    box-sizing: border-box;
+    height: 500px;
+    background-color: black;
+    float: left;
+}
+.third .About{
+    float: left;
+    color: white;
+}

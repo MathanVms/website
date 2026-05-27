@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    padding: 50px;
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.Fourth{
+    height: 350px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.Fourth .details{
+    color: white;
+    float: left;
+
+}
+.Fourth input{
+    width: 200px;
+    height: 30px;
+    background-color: black; 
+}
+.Fourth .details pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+}
